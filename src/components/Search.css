@@ -1,0 +1,58 @@
+.search__input {
+  display: flex;
+  align-items: center;
+  width: min(75vw, 560px);
+  height: 30px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 999px;
+  margin-top: 40px;
+}
+
+.search__input > input {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  font-size: medium;
+}
+
+.search__input > input:focus {
+  outline-width: 0;
+}
+
+.search__inputIcon {
+  color: gray;
+}
+
+.search__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search__buttons button {
+  margin: 5px;
+  padding: 7px 15px;
+  background-color: #f8f8f8;
+  color: gray;
+  border: 1px solid white;
+  text-transform: inherit;
+}
+
+/* TO REMOVE MATERIAL UI BUTTON STYLES */
+.search__buttons button:hover {
+  border-color: white;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  color: #222;
+}
+
+.search__buttonsHidden {
+  display: none !important;
+}
+/* 
+If an element has flex: 1, this means the size of all of the other elements will have the same width as their content,
+but the element with flex: 1 will have the remaining full space given to it.
+*/
